@@ -25,10 +25,8 @@ The system is built to be entirely hands-off, operating on a 100% serverless sta
 
 ## Repository Structure
 
-* `lambda_function.py`: The core Python logic for cost retrieval and threshold checking.
-* `main.tf`: Infrastructure as Code (IaC) to deploy the Lambda, EventBridge rules, and SNS topics.
-* `policy.json`: The IAM policy defining the security boundaries for the cost auditor.
+* `CostEstimationAuto.py`: The core Python logic for cost retrieval and threshold checking.
 
 ## Deployment
 
-This system is deployed via **Terraform**. Simply initialize the workspace, update the threshold variable, and apply to secure your AWS environment against unexpected billing spikes.
+This system was deployed with ClickOps architecture because of it's minimalistic design.
